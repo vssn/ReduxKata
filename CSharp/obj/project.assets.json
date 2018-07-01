@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\edmun\\Desktop\\Projekte\\ReduxKata\\CSharp\\ReduxKata\\ReduxKata.csproj",
+      "projectUniqueName": "C:\\Users\\edmun\\Desktop\\Projekte\\ReduxKata\\CSharp\\ReduxKata.csproj",
       "projectName": "ReduxKata",
-      "projectPath": "C:\\Users\\edmun\\Desktop\\Projekte\\ReduxKata\\CSharp\\ReduxKata\\ReduxKata.csproj",
+      "projectPath": "C:\\Users\\edmun\\Desktop\\Projekte\\ReduxKata\\CSharp\\ReduxKata.csproj",
       "packagesPath": "C:\\Users\\edmun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\edmun\\Desktop\\Projekte\\ReduxKata\\CSharp\\ReduxKata\\obj\\",
+      "outputPath": "C:\\Users\\edmun\\Desktop\\Projekte\\ReduxKata\\CSharp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

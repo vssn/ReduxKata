@@ -9,3 +9,14 @@ C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\ReduxKata\obj\Debug\netcoreapp2
 C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\ReduxKata\obj\Debug\netcoreapp2.1\ReduxKata.AssemblyInfo.cs
 C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\ReduxKata\obj\Debug\netcoreapp2.1\ReduxKata.dll
 C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\ReduxKata\obj\Debug\netcoreapp2.1\ReduxKata.pdb
+C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\bin\Debug\netcoreapp2.1\ReduxKata.deps.json
+C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\bin\Debug\netcoreapp2.1\ReduxKata.runtimeconfig.json
+C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\bin\Debug\netcoreapp2.1\ReduxKata.runtimeconfig.dev.json
+C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\bin\Debug\netcoreapp2.1\ReduxKata.dll
+C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\bin\Debug\netcoreapp2.1\ReduxKata.pdb
+C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\obj\Debug\netcoreapp2.1\ReduxKata.csprojAssemblyReference.cache
+C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\obj\Debug\netcoreapp2.1\ReduxKata.csproj.CoreCompileInputs.cache
+C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\obj\Debug\netcoreapp2.1\ReduxKata.AssemblyInfoInputs.cache
+C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\obj\Debug\netcoreapp2.1\ReduxKata.AssemblyInfo.cs
+C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\obj\Debug\netcoreapp2.1\ReduxKata.dll
+C:\Users\edmun\Desktop\Projekte\ReduxKata\CSharp\obj\Debug\netcoreapp2.1\ReduxKata.pdb
