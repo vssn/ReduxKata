@@ -17,16 +17,12 @@ fn log(state: u32) {
 fn counter (state: u32, action: Actions) -> u32 {
     match action {
         Actions::INCREASE => {
-            let newState = state + 1;
-            newState
+            let state = state + 1;
+            state
         },
         Actions::DECREASE => {
-            let newState = state - 1;
-            newState
-        },
-        _ => {
-            let newState = state;
-            newState
+            let state = state - 1;
+            state
         }
     }
 }
