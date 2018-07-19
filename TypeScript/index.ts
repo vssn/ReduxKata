@@ -1,12 +1,13 @@
-interface Action {
-    type: string
+enum Action {
+    INCREMENT,
+    DECREMENT
 }
 
 const counter = (state = 0, action: Action) => {
-    switch (action.type) {
-        case 'INCREMENT':
+    switch (action) {
+        case Action.INCREMENT:
             return state += 1;
-        case 'DECREMENT':
+        case Action.DECREMENT:
             return state -= 1
     }
     return state;
@@ -39,6 +40,6 @@ const log = (state) => {
 const store = createStore(counter);
 store.subscribe(log);
 
-store.dispatch({ type: 'INCREMENT' })
-store.dispatch({ type: 'INCREMENT' })
-store.dispatch({ type: 'DECREMENT' })
+store.dispatch(Action.INCREMENT);
+store.dispatch(Action.INCREMENT);
+store.dispatch(Action.DECREMENT);
