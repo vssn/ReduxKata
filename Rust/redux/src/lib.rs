@@ -1,6 +1,6 @@
 use std::cell::Cell;
 
-pub enum Actions {
+pub enum Action {
     INCREASE,
     DECREASE
 }
@@ -8,11 +8,11 @@ pub enum Actions {
 pub struct Store {
     state: Cell<u32>,
     listeners: Vec<&'static Fn(u32)>,
-    reducer: &'static Fn(u32, Actions) -> u32
+    reducer: &'static Fn(u32, Action) -> u32
 }
 
 impl Store {
-    pub fn create_store(state: u32, reducer: &'static Fn(u32, Actions) -> u32 ) -> Store {
+    pub fn create_store(state: u32, reducer: &'static Fn(u32, Action) -> u32 ) -> Store {
         Store { state: Cell::new(state), listeners: Vec::new(), reducer }
     }
     pub fn get_state(&self) -> u32 {
@@ -21,7 +21,7 @@ impl Store {
     pub fn subscribe(&mut self, listener: &'static Fn(u32)) {
         self.listeners.push(listener);
     }
-    pub fn dispatch(&mut self, action: Actions) {
+    pub fn dispatch(&mut self, action: Action) {
         self.state = Cell::new((*self.reducer)(self.state.get(), action));
         for listener in self.listeners.iter() {
             listener(self.state.get());
@@ -34,21 +34,10 @@ mod test {
     use super::*;
 
     // Sample Reducer
-    fn counter (state: u32, action: Actions) -> u32 {
+    fn counter (state: u32, action: Action) -> u32 {
         match action {
-            Actions::INCREASE => {
-                
-                let newState = state + 1;
-                newState
-            },
-            Actions::DECREASE => {
-                let newState = state - 1;
-                newState
-            },
-            _ => {
-                let newState = state;
-                newState
-            }
+            Action::INCREASE => state + 1,
+            Action::DECREASE => state - 1
         }
     }
 
@@ -60,11 +49,9 @@ mod test {
 
     #[test]
     fn it_dispatches_an_action() {
-        let c = &counter;
-        let mut store = Store::create_store(0, c);
+        let mut store = Store::create_store(0, &counter);
 
-        store.dispatch(Actions.INCREASE);
-
+        store.dispatch(Action::INCREASE);
         assert_eq!(store.get_state(), 1);
     }
 }
